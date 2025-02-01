@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{tgheros}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+% \usepackage{helvet}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Siba Prasad Tripathy} \\ \vspace{1pt}
+    \small +91-78942-31432 $|$ \href{mailto:sibatripathy19@gmail.com}{\underline{sibatripathy19@gmail.com}} $|$ 
+    \href{https://linkedin.com/in//siba-prasad-tripathy}{\underline{linkedin.com/in/siba-prasad-tripathy}} $|$
+    \href{https://github.com/siba-tripathy}{\underline{github.com/siba-tripathy}}
+\end{center}
+
+%
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, Go} \\
+     \textbf{Frameworks}{: Spring, Node.js, React, JUnit+Mockito, OAuth 2.0, GraphQL API} \\
+     \textbf{Infra:}{ [AWS] EC2-ECS, Lambda, DymanoDB, ElasticSearch, ElastiCache, SQS-SNS, VPC, Route53, CloudWatch, CDK} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, IntelliJ, PostMan, SQL, vim, CI/CD pipelines} \\
+     \textbf{Problem Solving}{: Algorithms, Data Structures, Design Patterns}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development Engineer 2}{July 2022 ----- Present}
+      {Amazon}{}
+      \resumeItemListStart
+        \resumeItem{Building "Localization and Accessibility" marketplace with auto-dubbing workflow, compliance-edits, third-party vendor on-boarding/order/costing workflows, asset quality-checks and catalog ingestion into "Prime Video Media Pipeline". Designed back-end systems, data models, both sync APIs and async event-driven architectures for efficient order fulfillment.}
+        \resumeItem{Drove transcription of 1.5 million titles in regional languages(jp animes) into english for world-wide release with 30-day timeline by scaling order orchestration and model hosting services . Added search functionality in the portal for better user search experience.}
+        \resumeItem{Added 60\% efficiency in localization turn-around time by automating vendor asset delivery via an FTP client, syncing external catalog services with localization service for notifications and escalation workflows.}
+        \resumeItem{Influencing/brain-storming with product stakeholders on product roadmap, disambiguating customer journeys.}
+        \resumeItem{Hiring and mentoring juniors, reviewing designs and code PRs, driving team ops review meetings, On-Call duties}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Development Engineer 1}{July 2019 -- June 2022}
+      {Amazon}{}
+      \resumeItemListStart
+        \resumeItem{Implemented Migration of external Amazon Studios' 1P APIs from dedicated APIs to generic, federated GraphQL APIs. Achieved this by developing a new gradle build client library, using ApolloKotin libraries. This client builder was adopted by multiple external teams across Amazon.}
+        \resumeItem{Designed and implemented role-based access control for security by introducing fine-grained authorization.}
+        \resumeItem{Enabled creative Quality Check workflows for non English titles that make up 1/3rd of total 700K+ titles in goal}
+        \resumeItem{Amazon Internal OAuth 2.0 implementation in \emph{Native AWS} services. Involved exploration and experimentation.}
+        \resumeItem{Data Warehousing and Analytics for visualizing platform effectiveness, powered by AWS Redshift and Grafana for dashboards. Shipped complete ETL automated workflows and created SOPs for handling operational issues.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Feb 2019 -- July 2019 }
+      {Amazon Prime Video}{}
+      \resumeItemListStart
+        \resumeItem{Built a metadata-text translation solution, which enabled multiple internal teams to utilize external localization for their content, using existing localization and pricing system.}
+        \resumeItem{Adoption by multiple teams is smooth running since \>3.5 years, with minor maintenance.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Cross Domain Search} $|$ \emph{TypeScript, ElasticSearch, Java, AWS SDK}}{Aug 2022 -- Nov 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a ElasticSearch powered search application with cross domain search.}
+            \resumeItem{Setup Cognito based authentication mechanism to enable developers to login to the ES domain and do administrative work like re-indexing, backfill, index analyzer changes.}
+            \resumeItem{Added kibana based visualizations as a fast solution before implementing the fuull fledged Redshift based data warehousing setup with AWS QuickSight as auto refreshing dashboards.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Space Shooting Game} $|$ \emph{JavaScript, HTML, CSS, Canvas APIs}}{May 2018 -- July 2019}
+          \resumeItemListStart
+            \resumeItem{Played around with HTML, JavaScript, interactive UI Canavs components in undergrad.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science and Engineering} {July 2015 -- May 2019}
+      {KIIT University: [G.P.A - 8.9/10] }{Odisha}
+    \resumeSubheading
+      {12th Senior Secondary}{Jun 2013 -- May 2015}
+      {St. Mary's School [92.00\%]}{Deepshikha}
+      
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
